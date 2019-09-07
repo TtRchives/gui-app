@@ -32,7 +32,7 @@ BAbt = t.Button(top, text ="About...", command=aboutCallback)
 BSm = t.Button(top, text ="Show more...", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
-THello = Text ( top, "'Hello' button was pressed")
+THello = t.Text ( top, "'Hello' button was pressed")
 
 
 B.pack()
