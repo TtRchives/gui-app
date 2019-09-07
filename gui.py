@@ -2,10 +2,9 @@ import Tkinter
 import tkMessageBox
 
 
-root = tkinter.Tk()
-root.title('My Title')
 
 top = Tkinter.Tk()
+top.title('gui-app')
 
 def helloCallback():
    tkMessageBox.showinfo( "gui-app", "Hello, World!")
