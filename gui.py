@@ -14,4 +14,5 @@ tkMessageBox.showerror("Willkommen!", "Welcome to slate alpha")
 
 
 B.pack()
+B2.pack()
 top.mainloop()
