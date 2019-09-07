@@ -2,6 +2,10 @@ import Tkinter
 import tkMessageBox
 t = Tkinter
 tkMB = tkMessageBox
+b = Button
+p = pack
+si = showinfo
+se = showerror
 
 
 
@@ -9,23 +13,24 @@ top = Tkinter.Tk()
 top.title('gui-app')
 
 def helloCallback():
-   tkMB.showinfo( "gui-app", "Hello, World!")
+   tkMB.si( "gui-app", "Hello, World!")
+   tkMB.si( "gui-app version", "gui-app 2.0, using TkInter")
 def badaCallback():
-   B3.pack()
+   B3.p()
 def notCodedCallback():
-   tkMB.showerror("Sorry", "Not coded yet")
+   tkMB.se("Sorry", "Not coded yet")
 def showMoreCallback():
-   B4.pack()
+   B4.p()
 
-B = t.Button(top, text ="Hello", command = helloCallback)
-B2 = t.Button(top, text ="Show more...", command= badaCallback)
-B3 = t.Button(top, text ="Show even more...", command= showMoreCallback)
-B4 = t.Button(top, text ="Badaboom!", command=notCodedCallback)
+B = t.b(top, text ="Hello", command = helloCallback)
+B2 = t.b(top, text ="Show more...", command= badaCallback)
+B3 = t.b(top, text ="Show even more...", command= showMoreCallback)
+B4 = t.b(top, text ="Badaboom!", command=notCodedCallback)
 
 
-B.pack()
-B2.pack()
-tkMB.showerror("Willkommen!", "Welcome to gui-app")
+B.p()
+B2.p()
+tkMB.se("Willkommen!", "Welcome to gui-app")
 
 
 top.mainloop()
