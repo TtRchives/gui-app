@@ -2,7 +2,7 @@ import Tkinter
 import tkMessageBox
 t = Tkinter
 tkMB = tkMessageBox
-from Tkinter import Label
+from Tkinter import *
 
 
 
@@ -19,6 +19,7 @@ def aboutCallback():
    tkMB.showinfo( "again, not affiliated", "https://shields.io/ for the README.md badges")
    tkMB.showinfo("dude do you still thing im affiliated with this company?", "https://pythonprogramming.net/tkinter-adding-text-images/")
    tkMB.showinfo("not affiliated", "the PSF and Tkinter -- without you this wouldn't exist!")
+   tkMB.showinfo("not affiliated", "https://smallguysit.com/index.php/2017/03/10/tkinter-create-window/, for 'from Tkinter import *'")
    tkMB.showinfo("thanks to all of you!", "Thanks so much!")
 def badaCallback():
    BSem.pack()
