@@ -10,7 +10,7 @@ B = Tkinter.Button(top, text ="Hello", command = helloCallBack)
 B2 = Tkinter.Button(top, text ="Badaboom!", command= helloCallBack)
 
 
-tkMessageBox.showerror("Willkommen!", "Welcome to slate alpha")
+tkMessageBox.showerror("Willkommen!", "Welcome to gui-app")
 
 
 B.pack()
