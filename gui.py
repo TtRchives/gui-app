@@ -7,7 +7,7 @@ root.title('My Title')
 
 top = Tkinter.Tk()
 
-def helloCallBack():
+def helloCallback():
    tkMessageBox.showinfo( "gui-app", "Hello, World!")
 def badaCallback():
    B3.pack()
