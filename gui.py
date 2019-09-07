@@ -1,6 +1,10 @@
 import Tkinter
 import tkMessageBox
 
+
+root = tkinter.Tk()
+root.title('My Title')
+
 top = Tkinter.Tk()
 
 def helloCallBack():
