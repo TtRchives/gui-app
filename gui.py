@@ -9,7 +9,7 @@ top = Tkinter.Tk()
 top.title('gui-app')
 
 def helloCallback():
-   w.pack
+   #Text.pack
    tkMB.showinfo( "gui-app", "Hello, World!")
 def aboutCallback():
    tkMB.showinfo( "gui-app version", "gui-app 2.0, using TkInter")
@@ -32,7 +32,7 @@ BAbt = t.Button(top, text ="About...", command=aboutCallback)
 BSm = t.Button(top, text ="Show more...", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
-THello = t.Text ( top, "'Hello' button was pressed")
+#THello = t.Text ( top, "'Hello' button was pressed")
 
 
 B.pack()
