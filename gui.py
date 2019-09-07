@@ -18,11 +18,13 @@ def aboutCallback():
    tkMB.showinfo("not affiliated", "the PSF and Tkinter -- without you this wouldn't exist!")
    tkMB.showinfo("thanks to all of you!", "Thanks so much!")
 def badaCallback():
-   B3.pack()
+   BSem.pack()
 def notCodedCallback():
    tkMB.showerror("Sorry", "Not coded yet")
 def showMoreCallback():
-   B4.pack()
+   BBada.pack()
+def badaCB():
+   BAbt.pack()
 
 B = t.Button(top, text ="Hello", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
@@ -32,7 +34,7 @@ BBada = t.Button(top, text ="Badaboom!", command=notCodedCallback)
 
 
 B.pack()
-B2.pack()
+BSm.pack()
 tkMB.showerror("Willkommen!", "Welcome to gui-app")
 
 
