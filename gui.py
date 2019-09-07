@@ -8,5 +8,9 @@ def helloCallBack():
 
 B = Tkinter.Button(top, text ="Hello", command = helloCallBack)
 
+
+tkMessageBox.showerror("Willkommen!", "Welcome to slate alpha")
+
+
 B.pack()
 top.mainloop()
