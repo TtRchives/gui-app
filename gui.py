@@ -29,6 +29,15 @@ def showMoreCallback():
    BBada.pack()
 def badaCB():
    BAbt.pack()
+#def messageWindow():
+    # create child window
+    #newWindow = Toplevel()
+    # display message
+    #message = "This is the child window"
+    #Label(win, text=message).pack()
+    # quit child window and return to root window
+    # the button is optional here, simply use the corner x of the child window
+    #Button(win, text='OK', command=win.destroy).pack()
 
 B = t.Button(top, text ="Hello", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
@@ -41,6 +50,7 @@ txt2 = Label(top, text="Welcome to gui-app!")
 txt2.pack()
 B.pack()
 BSm.pack()
+Button(top, text='Exit', command=top.destroy).pack()
 tkMB.showerror("Willkommen!", "Welcome to gui-app")
 
 
