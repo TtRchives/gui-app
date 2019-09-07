@@ -10,6 +10,7 @@ top.title('gui-app')
 
 def helloCallback():
    tkMB.showinfo( "gui-app", "Hello, World!")
+def aboutCallback():
    tkMB.showinfo( "gui-app version", "gui-app 2.0, using TkInter")
 def badaCallback():
    B3.pack()
@@ -19,9 +20,10 @@ def showMoreCallback():
    B4.pack()
 
 B = t.Button(top, text ="Hello", command = helloCallback)
-B2 = t.Button(top, text ="Show more...", command= badaCallback)
-B3 = t.Button(top, text ="Show even more...", command= showMoreCallback)
-B4 = t.Button(top, text ="Badaboom!", command=notCodedCallback)
+BAbt = t.Button(top, text ="About...", command=aboutCallback)
+BSm = t.Button(top, text ="Show more...", command= badaCallback)
+BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
+BBada = t.Button(top, text ="Badaboom!", command=notCodedCallback)
 
 
 B.pack()
