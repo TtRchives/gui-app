@@ -30,7 +30,7 @@ B = t.Button(top, text ="Hello", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
 BSm = t.Button(top, text ="Show more...", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
-BBada = t.Button(top, text ="Badaboom!", command=notCodedCallback)
+BBada = t.Button(top, text ="Badaboom!", command=badaCB)
 
 
 B.pack()
