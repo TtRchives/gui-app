@@ -13,7 +13,7 @@ def helloCallback():
 def badaCallback():
    B3.pack()
 def notCodedCallback():
-   tkMB.showerror("Sorry", "Not coded yet")'
+   tkMB.showerror("Sorry", "Not coded yet")
 def showMoreCallback():
    B4.pack()
 
