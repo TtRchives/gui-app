@@ -26,19 +26,20 @@ def aboutCallback():
    about.title("About gui-app")
    #display message
    Label(about, text="gui-app 2.1 build 6").pack()
+   Label(about).pack
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
    Label(about, text="Thanks to tiny.cc/tkinterguide for providing a guide.").pack
    Label(about, text="Thanks to tiny.cc/tkintertitle (see the one by user8875910) for the title bar").pack()
-   Label(about, text="Thanks also to shields.io for the README.md badges")
-   Label(about, text="Thanks also to pythonprogramming.net/tkinter-adding-text-images/ for a nice article (can't remember what it taught me though)")
-   Label(about, text="Thanks so much to the Python Software Foundation and TkInter -- without you this wouldn't exist!")
-   Label(about, text="Thanks to smallguysit.com/index.php/2017/03/10/tkinter-create-window/ for 'from Tkinter import *'")
+   Label(about, text="Thanks also to shields.io for the README.md badges").pack()
+   Label(about, text="Thanks also to pythonprogramming.net/tkinter-adding-text-images/ for a nice article (can't remember what it taught me though)").pack()
+   Label(about, text="Thanks so much to the Python Software Foundation and TkInter -- without you this wouldn't exist!").pack()
+   Label(about, text="Thanks to smallguysit.com/index.php/2017/03/10/tkinter-create-window/ for 'from Tkinter import *'").pack()
    Label(about).pack
-   Label(about, text="Thanks to all!")
+   Label(about, text="Thanks to all!").pack()
    #quit child window and return to root window
    #the button is optional here, simply use the corner x of the child window
-   Button(about, text='OK', command=newWindow.destroy).pack()
+   Button(about, text='OK', command=about.destroy).pack()
 def badaCallback():
    BSem.pack()
 def notCodedCallback():
