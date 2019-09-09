@@ -29,6 +29,7 @@ def showMoreCallback():
    BBada.pack()
 def badaCB():
    BAbt.pack()
+   Button(top, text='Exit', command=top.destroy).pack()
 #def messageWindow():
     # create child window
     #newWindow = Toplevel()
@@ -50,7 +51,6 @@ txt2 = Label(top, text="Welcome to gui-app!")
 txt2.pack()
 B.pack()
 BSm.pack()
-Button(top, text='Exit', command=top.destroy).pack()
 tkMB.showerror("Willkommen!", "Welcome to gui-app")
 
 
