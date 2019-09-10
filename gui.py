@@ -62,12 +62,16 @@ def messageWindow():
     Button(newWindow, text='OK', command=newWindow.destroy).pack()
 def easterEggCallback():
   txt3.pack()
+def menuCB():
+   
 
 B = t.Button(top, text ="Hello", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
 BSm = t.Button(top, text ="Show more...", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
+BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
+
 txt1 = Label(top, text="'Hello' button was pressed")
 txt2 = Label(top, text="Welcome to gui-app!")
 txt3 = Label(top, text="NOTE: You pressed the Easter egg!")
