@@ -24,7 +24,7 @@ def aboutCallback():
    #create child window
    about = Toplevel()
    about.title("About gui-app")
-   #display message
+   #display messages
    Label(about, text="gui-app 2.1 build 6").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
@@ -36,6 +36,7 @@ def aboutCallback():
    Label(about, text="Thanks so much to the Python Software Foundation and TkInter -- without you this wouldn't exist!").pack()
    Label(about, text="Thanks to smallguysit.com/index.php/2017/03/10/tkinter-create-window/ for 'from Tkinter import *'").pack()
    Label(about, text="Thanks to tiny.cc/childwindow for the guide on child windows -- it helped with this window!").pack()
+   Label(about, text="http://tiny.cc/menubartkinter for the Menu Bar (work-in-progress)").pack()
    Label(about).pack()
    Label(about, text="Thanks to all!").pack()
    #quit child window and return to root window
@@ -63,7 +64,41 @@ def messageWindow():
 def easterEggCallback():
   txt3.pack()
 def menuCB():
-   
+   def set_menu(window, choices):
+    menubar = t.Menu(top)
+    window.config(menu=menubar)
+
+    def _set_choices(menu, choices):
+        for label, command in choices.items():
+            if isinstance(command, dict):
+                # Submenu
+                submenu = t.Menu(menu)
+                menu.add_cascade(label=label, menu=submenu)
+                _set_choices(submenu, command)
+            elif label == '-' and command == '-':
+                # Separator
+                menu.add_separator()
+            else:
+                # Simple choice
+                menu.add_command(label="", command=notCodedCallback)
+
+    _set_choices(menubar, choices)
+
+if __name__ == '__main__':
+    import sys
+
+    root = tkinter.Tk()
+
+    from collections import OrderedDict
+
+    set_menu(root, {
+        'File': OrderedDict([
+            ('Open', lambda: print('Open!')),
+            ('Save', lambda: print 'Save'),
+            ('-', '-'),
+            ('Quit', lambda: sys.exit(0))
+        ])
+    })
 
 B = t.Button(top, text ="Hello", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
